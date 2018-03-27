@@ -120,12 +120,12 @@ componentDidMount() {
     //this.channel.push("show_subscribers").recieve("ok", response => {console.log("hey")})
 }
 
-componentDidUpdate() {
+/*componentDidUpdate() {
     if(this.state.redPositions.length == 0) {
         this.state.channel.push("Redwon", {}).receive("ok", response => {console.log("red Won the game")})
         .receive("error", response => {console.log("error")} )
     }
-}
+} */
 
 gotView(view) {
     console.log("entered inside")

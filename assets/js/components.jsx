@@ -429,16 +429,16 @@ export class Chat extends React.Component {
     }
     render(){
         let chatCols =  <div id="chatBox">
-        <form className="input" onSubmit={(e) => this.submitMessage(e)}>
+        <form  onSubmit={(e) => this.submitMessage(e)}>
         <input type="text"  ref="msg"/>
-        <input type="submit"  value="Send"/>
+       
     </form>
     </div>
        if(this.props.enabled == false) {
         chatCols =  <div id="chatBox">
         <form className="input">
         <input type="text"  ref="msg" placeholder = "only players can chat" disabled/>
-        <input type="submit"  value="Send" disabled/>
+       
     </form>
     </div>
        }

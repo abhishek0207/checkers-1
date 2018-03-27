@@ -208,6 +208,10 @@ let chatEnabled = this.state.chat
 return(
 <div class="someDiv">
 <div class="row">
+<Stuff value = {this.state.message} />
+</div>
+
+<div class="row">
 <div class="col-sm-6">
 <Board red={this.state.redPositions} 
     all={this.state.allPositions} 
@@ -222,10 +226,9 @@ return(
     blackKing = {this.state.blackKing}/>
 </div>
 <div class="col-sm-3">
-<Stuff value = {this.state.message} />
 </div>
 <div class="col-sm-3">
-<div className="chat">
+<div>
 <h3>Chat</h3>
 <div id="chatArea">
             <ul className="list-group">
